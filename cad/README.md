@@ -41,7 +41,7 @@ cad/
 
 The model was originally created in Inventor 2021 and is currently saved in Inventor 2026. Inventor files cannot be opened in a release older than the one that last saved them, so these files **cannot be opened in Inventor 2021**.
 
-Inventor 2021 was used to export the model to Simscape Multibody through the Simscape Multibody Link plug-in, which was only available up to that release. The geometry used by the simulations is stored in [`../matlab/geometry`](../matlab/geometry); see [`../matlab/README.md`](../matlab/README.md).
+Inventor 2021 was used to export the model to Simscape Multibody through the Simscape Multibody Link plug-in, which was only available up to that release. The geometry used by the simulations is stored in [`../matlab/simulink/cad`](../matlab/simulink/cad); see [`../matlab/README.md`](../matlab/README.md).
 
 ## Finger composition
 
@@ -98,7 +98,7 @@ Print orientation, material and slicer settings are not prescribed. The paper re
 
 ## Bill of materials
 
-Materials and equipment are listed in Table VI of the paper (see [`../docs`](../docs)). The reported budget is approximately USD 450 (CLP 434,712 at CLP 965/USD), including purchased spares and laboratory power supplies. It excludes engineering development time and charges for the use of university manufacturing equipment, and is not an installed-parts-only replication cost.
+Materials and equipment are listed in Table VI of the paper. The reported budget is approximately USD 450 (CLP 434,712 at CLP 965/USD), including purchased spares and laboratory power supplies. It excludes engineering development time and charges for the use of university manufacturing equipment, and is not an installed-parts-only replication cost.
 
 ## Limitations
 
