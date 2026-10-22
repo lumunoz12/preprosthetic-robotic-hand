@@ -3,7 +3,7 @@
 This repository accompanies the paper **"Design and Bench Evaluation of a Low-Cost Robotic Hand with Mechanically Coupled Distal Joints"** (L. Muñoz and M. Fernández-Fernández, Universidad de Talca), submitted to IEEE ICA-ACCA 2026. It contains the mechanical design files, embedded firmware, MATLAB/Simulink/Simscape Multibody models and scripts, and the experimental datasets associated with the paper.
 
 <p align="center">
-  <img src="docs/images/hand_prototype.jpg" width="50" alt="Assembled prototype">
+  <img src="docs/images/hand_prototype.jpg" width="400" alt="Assembled prototype">
 </p>
 
 The hand is a laboratory platform for pre-prosthetic grasping research. It is a research prototype, not a clinically validated prosthetic device.
