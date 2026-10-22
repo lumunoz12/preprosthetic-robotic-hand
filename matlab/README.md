@@ -1,6 +1,6 @@
 # MATLAB, Simulink and Simscape Multibody
 
-This folder contains the three Simscape Multibody models used in the paper (pinch, lateral pinch and cylindrical grasp), the data file and CAD geometry they depend on, and the MATLAB scripts used for kinematics, grasp trajectories and motor identification/LQR design.
+This folder contains the MATLAB scripts used for kinematics, grasp setpoints, motor identification and LQR design, and the encoder comparison, together with the MATLAB project that holds the three Simscape Multibody models used in the paper (pinch, lateral pinch and cylindrical grasp).
 
 Simulation outputs are **modeled** quantities. Contact parameters were tuned by trial and error without calibration against physical contact measurements, so simulated forces are not experimentally validated and do not predict physical grasp success.
 
@@ -8,68 +8,61 @@ Simulation outputs are **modeled** quantities. Contact parameters were tuned by 
 
 ```text
 matlab/
-├── models/
-│   ├── mano_buena_pinza_paper.slx        # pinch
-│   ├── mano_buena_lateral_paper.slx      # lateral pinch
-│   ├── mano_buena_cilindrico_paper.slx   # cylindrical grasp
-│   └── LQR_simu.slx                      # LQR simulation of a single motor
-├── data/
-│   └── mano_vf_DataFile1.m               # geometry/inertia data required by the models
-├── geometry/                             # STEP files of the hand parts used by the models
-├── scripts/
-│   ├── Cinematica_inversa.m
+├── script/
 │   ├── Cdirecta.m
+│   ├── Cinematica_inversa.m
 │   ├── media_distal_indice.m
-│   ├── LQR_motorV2.m
 │   ├── TipPinchGrasp.m
 │   ├── LateralPinchGrasp.m
 │   ├── CylindricalGrasp.m
-│   ├── CILINDRICO.m
-│   ├── cyl_targets.c
-│   ├── cyl_targets.h
-│   └── escalon_motor2.mat
+│   ├── LQR_motorV2.m
+│   ├── escalon_motor2.mat
+│   ├── graficar_motorN20.m
+│   └── datos_motor.mat
+├── simulink/
+│   ├── simulink.prj                              MATLAB project file
+│   ├── resources/project/                        MATLAB project metadata (do not edit)
+│   ├── modelos/
+│   │   ├── mano_buena_pinza_paper.slx            Pinch
+│   │   ├── mano_buena_lateral_paper.slx          Lateral pinch
+│   │   ├── mano_buena_cilindrico_paper.slx       Cylindrical grasp
+│   │   ├── LQR_simu.slx                          LQR simulation of a single motor
+│   │   ├── mano_buena_pinza_paper.slx.original   Backup copy of the pinch model
+│   │   └── *.slxc                                Simulink cache files
+│   ├── datos/
+│   │   └── mano_vf_DataFile1.m                   Geometry and inertia data required by the models
+│   ├── cad/                                      STEP geometry used by the models (33 files)
+│   ├── script/
+│   │   ├── CILINDRICO.m
+│   │   ├── cyl_targets.c
+│   │   └── cyl_targets.h
+│   └── *.slxc                                    Simulink cache files
 └── README.md
 ```
 
+The STEP files in `simulink/cad/` were exported from the Inventor 2021 version of the hand model through Simscape Multibody Link (see [`../cad/README.md`](../cad/README.md)). Some of their part names differ from the current native CAD files.
+
 ## Requirements
 
-| Item | Requirement |
+All files were developed and run with **MATLAB R2025a** on Windows 11.
+
+| Product | Required for |
 |---|---|
-| MATLAB release | **MATLAB R20XXx** (replace with the release used to verify the models) |
-| Required products | MATLAB, Simulink, Simscape, Simscape Multibody |
-| Optional products | Control System Toolbox and System Identification Toolbox, only for the motor identification and LQR design scripts |
+| MATLAB, Simulink, Simscape, Simscape Multibody | Models in `simulink/modelos/` |
+| System Identification Toolbox, Control System Toolbox | `LQR_motorV2.m` (`iddata`, `ssest`, `c2d`, `dlqr`) |
+| Statistics and Machine Learning Toolbox | `graficar_motorN20.m` (`normpdf`) |
 
-The three models use Spatial Contact Force blocks (Simscape Multibody). They were run with a variable-step `ode23` solver, maximum step size 1e-3 s, relative tolerance 1e-2 and absolute tolerance 1e-4.
+The kinematics and grasp-setpoint scripts use only base MATLAB.
 
-## Initialization
+## Running the simulations
 
-Start from a **new** MATLAB session with no variables loaded. All paths below are relative to the repository root.
+Open `simulink/simulink.prj` in MATLAB and run the models in `simulink/modelos/`.
 
-```matlab
-% 1. Make the matlab/ folder the current folder and add its subfolders to the path
-cd matlab
-addpath(genpath(pwd))
+The simulated grasp logic uses a contact-force threshold `F_threshold = 2` N. It is distinct from the firmware threshold of 1500 ADC counts, and equivalence between the two was not established.
 
-% 2. Load the model data into the base workspace
-run('data/mano_vf_DataFile1.m')
+The three grasp models use Spatial Contact Force blocks and were run with a variable-step `ode23` solver, maximum step size 1e-3 s, relative tolerance 1e-2 and absolute tolerance 1e-4.
 
-% 3. Set the contact-force threshold of the simulated grasp logic [N]
-F_threshold = 2;
-
-% 4. Open and simulate one of the models
-open_system('mano_buena_pinza_paper')        % pinch
-% open_system('mano_buena_lateral_paper')    % lateral pinch
-% open_system('mano_buena_cilindrico_paper') % cylindrical grasp
-sim('mano_buena_pinza_paper')
-```
-
-Notes:
-
-- `mano_vf_DataFile1.m` and `F_threshold` must exist in the **base workspace** before a model is simulated. Repeat steps 2–3 in every new session.
-- `F_threshold = 2` is the contact-force threshold (in newtons) that triggers the motion-holding condition in the simulated grasp logic. It is distinct from the firmware threshold of 1500 ADC counts, and equivalence between the two was not established.
-- No absolute paths are required. If MATLAB cannot find a geometry file, check that `geometry/` is on the path (step 1).
-
-## Reported simulation settings and results
+## Reported simulation results
 
 Simulation end times were set to the approximate grasp-completion times identified during simulation. They are simulated elapsed time, not computation time or measured physical grasp duration.
 
@@ -85,19 +78,26 @@ Physical bench trials used different joint targets and, in some cases, different
 
 ## Scripts
 
+Scripts in `script/` load their data files by name, so run them with `script/` as the current folder.
+
 | File | Purpose |
 |---|---|
-| `Cinematica_inversa.m`, `Cdirecta.m` | Kinematics of the four-bar linkage that couples each distal joint to its adjacent actuated joint |
-| `media_distal_indice.m` | Auxiliary script related to the index-finger distal joint |
-| `TipPinchGrasp.m`, `LateralPinchGrasp.m`, `CylindricalGrasp.m` | Joint-trajectory definitions for the three grasp patterns |
-| `CILINDRICO.m`, `cyl_targets.c`, `cyl_targets.h` | Cylindrical-grasp joint targets; the C files are also used by the firmware |
-| `LQR_motorV2.m` | First-order motor model identification, discretization (Ts = 0.02 s) and discrete LQR design |
-| `escalon_motor2.mat` | Step-test data of an isolated N20 gearmotor (same test as `data/escalon_motor2.csv`) |
+| `media_distal_indice.m` | Newton–Raphson solution of the index-finger four-bar linkage over the input angle; tabulates the PIP–DIP relation and interpolates the DIP angle for a PIP angle entered by the user |
+| `Cdirecta.m` | Forward kinematics of the complete hand (four long fingers and thumb), using polynomial fits of the distal coupling; plots the hand and prints fingertip positions |
+| `Cinematica_inversa.m` | Inverse kinematics of the five fingers with an analytic Jacobian and damped least squares; plots the resulting hand posture |
+| `TipPinchGrasp.m` | Setpoint function for the simulated pinch grasp: joint targets by inverse kinematics, staged closure and hold on contact |
+| `LateralPinchGrasp.m` | Setpoint function for the simulated lateral pinch grasp |
+| `CylindricalGrasp.m` | Setpoint function for the simulated cylindrical grasp |
+| `LQR_motorV2.m` | First-order motor model identification from `escalon_motor2.mat`, augmentation with angular position, zero-order-hold discretization (Ts = 0.02 s), discrete LQR design and step simulation |
+| `escalon_motor2.mat` | Step-test data of an isolated N20 gearmotor (same data as `data/escalon_motor2.csv`) |
+| `graficar_motorN20.m` | Incremental encoder vs. AS5600 comparison: error statistics and four figures (scatter, error per target, error histogram, time response), exported as PDF and SVG to the current folder |
+| `datos_motor.mat` | Encoder comparison data: commanded targets, logged encoder and AS5600 readings per target, and steady-state estimates |
+| `simulink/script/CILINDRICO.m`, `cyl_targets.c`, `cyl_targets.h` | Cylindrical-grasp joint targets; the C files are also used by the firmware in `firmware/Core/` (keep both copies identical) |
 
-The identified model was estimated with `ssest` from 699 input–velocity pairs. The reported 99.81% fit concerns the identification data; no independent validation dataset was used.
+The setpoint functions are defined as `TipPinchGrasp_setpoint`, `LateralPinchGrasp_setpoint` and `CylindricalGrasp_setpoint`. `TipPinchGrasp` corresponds to the pinch grasp of the paper. `LateralPinchGrasp.m` and `TipPinchGrasp.m` use finger lengths for the middle, ring and little fingers that differ from those in the other kinematics scripts.
 
-## Models
+**Motor identification.** The model was estimated with `ssest` from 699 input–velocity pairs. The reported 99.81% fit concerns the identification data; no independent validation dataset was used. The resulting gain is K = [2192.4  757.4].
+
+**Encoder comparison.** `graficar_motorN20.m` computes the error as `enc_est − as_est` over the seven targets (10°–90°). These steady-state estimates give the values reported in the paper: mean bias −0.31°, MAE 1.77°, RMSE 2.81° and maximum absolute error 6.43°. The file also contains `enc_final` and `as_final`, which are not used in the reported statistics.
 
 `LQR_simu.slx` is not one of the three Simscape grasp models; it is provided as supplementary material for the LQR design.
-
-Generated files (`slprj/`, `*.slxc`) are not tracked and are recreated by MATLAB.
