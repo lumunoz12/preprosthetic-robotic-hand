@@ -78,7 +78,7 @@ The files were developed and run with the following versions. Other versions hav
 | Simulink, Simscape, Simscape Multibody | R2025a | Grasp simulation models |
 | System Identification Toolbox, Control System Toolbox | R2025a | `LQR_motorV2.m` (`ssest`, `c2d`, `dlqr`) |
 | Autodesk Inventor Professional | 2021 (Build 183) and 2026 (Build 175, Release 2026.0.1) | Native CAD files |
-| STM32CubeIDE | See `firmware/README.md` | Firmware build and flashing |
+| STM32CubeIDE | 1.19.0 | Firmware build and flashing |
 
 Inventor files cannot be opened in a release older than the one that last saved them, so Inventor 2026 or later is recommended.
 
