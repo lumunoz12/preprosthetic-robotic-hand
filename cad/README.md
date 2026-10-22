@@ -94,7 +94,7 @@ Print orientation, material and slicer settings are not prescribed. The paper re
 ## Modeling notes
 
 - **Bevel gears.** The CAD model represents the bevel gears in a simplified form, as 12T/24T gears (`12T.ipt`, `24T.ipt`). The physical prototype uses M0.5 bevel gears with 13 and 25 teeth (paper, Table VI). The firmware uses a nominal motor-output-to-joint ratio of nb = 2 as an approximation of this transmission.
-- **N20 gearmotor model.** `N20 Mini Micro Metall Gear Motor DC 3-6-12V v1.ipt` was obtained from a third-party online source and is used for fit and assembly only. It is not part of the authors' original design, and its original terms of use apply.
+- **N20 gearmotor model.** `N20 Mini Micro Metall Gear Motor DC 3-6-12V v1.ipt` is the model [N20 Mini Micro Metal Gear Motor with Encoder](https://grabcad.com/library/n20-mini-micro-metal-gear-motor-with-encoder-1) by [Steve Hentschke](https://grabcad.com/steve.hentschke-1), published in the GrabCAD Library on October 7, 2023. It is used for fit and assembly only, is not part of the authors' original design, and remains subject to the GrabCAD terms of use.
 
 ## Bill of materials
 
