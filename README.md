@@ -1,134 +1,121 @@
 # Design and Bench Evaluation of a Low-Cost Robotic Hand with Mechanically Coupled Distal Joints
 
-This repository accompanies the research paper **“Design and Bench Evaluation of a Low-Cost Robotic Hand with Mechanically Coupled Distal Joints.”** It contains the source files, simulation models, mechanical designs, embedded firmware, and experimental datasets associated with the development and bench evaluation of a low-cost five-finger robotic hand.
+This repository accompanies the paper **"Design and Bench Evaluation of a Low-Cost Robotic Hand with Mechanically Coupled Distal Joints"** (L. Muñoz and M. Fernández-Fernández, Universidad de Talca), submitted to IEEE ICA-ACCA 2026. It contains the mechanical design files, embedded firmware, MATLAB/Simulink/Simscape Multibody models and scripts, and the experimental datasets associated with the paper.
 
-The platform was developed for laboratory research on robotic grasping and pre-prosthetic systems. It is intended as a research prototype, not as a clinically validated prosthetic device.
+The hand is a laboratory platform for pre-prosthetic grasping research. It is a research prototype, not a clinically validated prosthetic device.
 
 ## Overview
 
-The robotic hand integrates mechanical design, embedded control, sensing, and simulation in a modular, 3D-printed platform.
+| Feature | Value |
+|---|---|
+| Fingers | 5 |
+| Represented joint angles | 15 |
+| Actuated axes | 10 (MCP and PIP of each long finger; thumb opposition/abduction and MCP flexion) |
+| Mechanically coupled distal joints | 5 (four-bar linkages: DIP follows PIP in the long fingers; IP follows MCP flexion in the thumb) |
+| Actuation | N20 DC gearmotors with incremental encoders, bevel-gear transmission |
+| Controller board | STM32F767ZI |
+| Position control | Discrete LQR state feedback, nominal 50 Hz |
+| Contact sensing | Two FSRs (thumb and index fingertips), threshold-based motion inhibition |
+| Fabrication | 3D printing |
+| Materials/equipment budget | Approximately USD 450 (see paper, Table VI) |
 
-Key features include:
+The five distal angles are constrained by the linkage geometry and are not independent degrees of freedom. Encoders are available only for the ten actuated axes; distal angles are inferred from the four-bar constraint and were not measured independently.
 
-- **Five-finger anthropomorphic design** with 15 represented joint angles and 10 actuated axes.
-- **Mechanically coupled distal joints** using four-bar linkages to coordinate PIP–DIP motion in the long fingers and MCP–IP motion in the thumb.
-- **Ten DC gearmotors** with bevel-gear transmissions.
-- **STM32F767ZI microcontroller** for embedded motion control.
-- **Encoder-based position feedback** and discrete Linear Quadratic Regulator (LQR) control.
-- **Two fingertip force-sensitive resistors (FSRs)** for threshold-based contact supervision.
-- **MATLAB/Simulink and Simscape Multibody** models for grasp simulation.
+## Bench grasp results
 
-## Grasp Evaluation
+Three grasp patterns were tested with three objects per pattern and five attempts per object. An attempt was successful when the hand reached the intended configuration and retained the unsupported object for at least 10 s without visible slip, assessed visually.
 
-Three grasp patterns were evaluated in simulation and physical bench trials:
+| Grasp pattern | Successful attempts |
+|---|---:|
+| Lateral pinch | 15/15 |
+| Pinch | 9/15 |
+| Cylindrical grasp | 3/15 |
 
-| Grasp pattern | Successful physical trials | Success rate |
-|---|---:|---:|
-| Pinch | 9/15 | 60% |
-| Lateral pinch | 15/15 | 100% |
-| Cylindrical grasp | 3/15 | 20% |
-| **Total** | **27/45** | **60%** |
+Per-object outcomes are reported in Table IV of the paper and in `data/Test_Hand.xlsx`. These results are specific to the tested objects and bench conditions; they are not standardized benchmarks.
 
-Each grasp pattern was tested with three selected objects and five attempts per object. An attempt was considered successful when the hand reached the intended configuration and retained the unsupported object for at least 10 seconds without visible slip.
-
-These results apply only to the selected objects and tested bench conditions. They should not be interpreted as standardized performance benchmarks or evidence of clinical suitability.
-
-## Repository Structure
-
-The repository is organized into the following directories:
+## Repository structure
 
 ```text
-preprosthetic-robotic-hand/
 ├── README.md
-├── matlab/
-│   └── README.md
-├── firmware/
-│   └── README.md
-├── cad/
-│   └── README.md
-├── data/
-│   └── README.md
-└── docs/
-    └── README.md
+├── cad/        Autodesk Inventor project and STL files for 3D printing
+├── firmware/   STM32CubeIDE project for the STM32F767ZI controller
+├── matlab/     Simscape Multibody grasp models, kinematics, grasp setpoint,
+│               motor identification/LQR and encoder-comparison scripts
+├── data/       Motor step test, FSR calibration and bench grasp trials
+└── docs/       Paper and documentation index
 ```
 
-The directories are being populated and documented as the project files are organized.
+Each folder has its own `README.md` with contents, usage notes and limitations.
 
-- **`matlab/`** — MATLAB scripts, Simulink models, and Simscape Multibody files for the three grasp patterns.
-- **`firmware/`** — STM32CubeIDE project and embedded-control source code.
-- **`cad/`** — Native mechanical CAD files and exchange formats for the hand and its components.
-- **`data/`** — Original experimental datasets associated with motor characterization, sensor calibration, and bench testing.
-- **`docs/`** — Research paper and supplementary technical documentation.
+## Where to find each part of the paper
 
-## Embedded Control
+| Paper content | Location |
+|---|---|
+| Mechanical design (Sec. II, Figs. 1–2, Table I) | `cad/` |
+| Four-bar kinematics and hand kinematics (Sec. II) | `matlab/scripts/` |
+| Encoder vs. AS5600 comparison (Sec. III-A) | `matlab/scripts/graficar_motorN20.m`, `matlab/scripts/datos_motor.mat` |
+| FSR characterization (Sec. III-A, Eq. 3) | `data/FSR.xlsx` |
+| Motor identification and LQR design (Sec. III-B, Eqs. 4, 5, 7, 8) | `matlab/scripts/LQR_motorV2.m`, `data/escalon_motor2.csv` |
+| Embedded control and grasp execution (Sec. III, Fig. 3, Eqs. 2, 6, 9) | `firmware/` |
+| Simscape Multibody simulations (Sec. IV, Table III) | `matlab/models/` |
+| Bench trials (Sec. IV–V, Tables II, IV, V) | `data/Test_Hand.xlsx` |
+| Budget (Table VI) | Paper |
 
-The embedded controller runs on an STM32F767ZI development board. It uses incremental encoder measurements to estimate actuated-joint positions and applies discrete LQR state feedback for position control.
+## Experimental data summary
 
-High-level commands and telemetry are communicated through a UART interface at 115200 baud. The nominal control update period is 20 ms (50 Hz), while telemetry is transmitted every 100 ms.
+- **Encoder vs. AS5600.** An isolated gearmotor was commanded to 10°, 20°, 30°, 45°, 60°, 75° and 90° in ascending order, with the position loop at 50 Hz and recording at 10 Hz for approximately 8 s per target. Error (incremental encoder minus AS5600) over the seven steady-state pairs: mean bias −0.31°, MAE 1.77°, RMSE 2.81°, maximum absolute error 6.43°. Reverse-motion hysteresis and assembled-joint accuracy were not evaluated.
+- **FSR calibration.** Six known loads (approximately 1.27–2.26 N), 12-bit ADC, 1 kΩ divider resistor: F = 1.767 × 10⁻³ · N_ADC − 1.087 N, R² = 0.982. Single ascending sequence; valid only within the tested range.
+- **Motor identification.** PWM steps of 0, 1000, 2000, 3000 and 4000 counts; 699 input–velocity pairs; first-order model estimated with `ssest` (99.81% fit on the identification data, no independent validation set). Timestamps are MATLAB serial reception times; uniform Ts = 0.02 s was assumed.
+- **Bench grasp trials.** Outcomes, peak raw FSR readings and final encoder-derived joint angles for all 45 attempts. FSR values are raw ADC counts; all are below the calibrated range and the 1500-count stop threshold, so they are not force measurements.
 
-The two FSR sensors, located at the thumb and index fingertips, provide threshold-based motion inhibition. They do not implement closed-loop force control or measure the contact-force distribution across all fingers.
+## Software and hardware
 
-## Simulation
+The files were developed and run with the following versions. Other versions have not been tested.
 
-The Simscape Multibody models represent the hand's mechanical geometry, joint constraints, coupled distal joints, and virtual grasp objects. Pinch, lateral pinch, and cylindrical grasp configurations were simulated.
+| Software | Version | Used for |
+|---|---|---|
+| MATLAB | R2025a (25.1), Windows 11 Pro | All scripts and models |
+| Simulink, Simscape, Simscape Multibody | R2025a | Grasp simulation models |
+| System Identification Toolbox, Control System Toolbox | R2025a | `LQR_motorV2.m` (`ssest`, `c2d`, `dlqr`) |
+| Simscape Multibody Link | R2025a | CAD export from Inventor 2021 to Simscape Multibody |
+| Autodesk Inventor Professional | 2026 (Build 175, Release 2026.0.1) | Drawings, assemblies and renderings |
+| Autodesk Inventor Professional | 2021 (Build 183) | Base model for export to Simscape Multibody |
+| STM32CubeIDE | 1.19.0 | Firmware build and flashing |
 
-Simulated contact forces depend on the selected contact and friction parameters. They were not experimentally validated against physical contact-force measurements, and simulation outcomes should not be treated as predictions of physical grasp success.
+Two Inventor releases were used. Inventor 2026 was used for drawings, assemblies and renderings. Inventor 2021 was used for the base model exported to Simscape Multibody through the Simscape Multibody Link plug-in, because the plug-in was only available for Inventor up to the 2021 release. Inventor files cannot be opened in a release older than the one that last saved them.
 
-## Experimental Data
-
-The repository is intended to include the original datasets used in the reported experimental characterization and evaluation. Each dataset will be accompanied by a description of its variables, units, and experimental context where this information is available.
-
-Reported experiments include:
-
-- Incremental-encoder comparison against an AS5600 absolute encoder.
-- FSR sensor characterization.
-- DC gearmotor characterization and model identification.
-- Physical grasp trials, including encoder measurements and raw FSR readings.
-
-Raw FSR readings below the calibrated range are not interpreted as force measurements. The reported grasp outcomes are determined independently from the FSR threshold.
-
-## Requirements
-
-The following software and hardware are associated with the project:
-
-- MATLAB and Simulink.
-- Simscape Multibody.
-- STM32CubeIDE and the appropriate STM32 software packages.
-- Compatible CAD software for native mechanical design files.
-- An STM32F767ZI development board and the corresponding hardware for physical testing.
-
-Exact software versions, dependencies, and instructions for running the models or building the firmware will be documented as the repository is validated. The availability of source files alone does not guarantee that every simulation or build will run without additional configuration.
+Physical testing requires the STM32F767ZI board, H-bridge drivers, ten N20 encoder gearmotors, two FSRs and the printed hand, as described in the paper and in `firmware/README.md`.
 
 ## Limitations
 
-This project is a laboratory research prototype. The reported study does not establish:
+The reported study does not establish:
 
 - Contact-driven passive adaptation of the fingers.
-- Superior performance relative to alternative controllers.
+- Superiority over alternative position controllers.
 - Experimentally validated simulated contact forces.
-- Closed-loop force regulation.
-- Clinical effectiveness, safety, or suitability as a prosthetic device.
+- FSR-triggered stopping or closed-loop force regulation (neither FSR reached its threshold during the trials).
+- Clinical effectiveness, safety or suitability as a prosthetic device.
 
-The physical results are specific to the tested objects, placements, and bench conditions. Further work is needed to improve quantitative contact and slip measurements, match simulation and experimental conditions, and compare the controller against alternative approaches.
+Simulation and bench conditions were not fully matched: joint targets were adjusted during testing and some physical objects differed from the virtual ones.
 
-## Reference
+## Citation
 
-**Paper title:** *Design and Bench Evaluation of a Low-Cost Robotic Hand with Mechanically Coupled Distal Joints*
+Final bibliographic details (pages, DOI) will be added after publication.
 
-**Authors:** Luis Muñoz and Mario Fernández-Fernández
-
-**Affiliation:** Universidad de Talca, Chile
-
-**Conference:** IEEE ICA-ACCA 2026 — International Conference on Automation / XXVII Congreso de la Asociación Chilena de Control Automático.
-
-The conference is scheduled for December 9–11, 2026, at Universidad del Bío-Bío, Concepción, Chile.
-
-A permanent publication link and the final bibliographic details will be added when available.
+```bibtex
+@inproceedings{munoz2026robotichand,
+  author    = {Mu{\~n}oz, Luis and Fern{\'a}ndez-Fern{\'a}ndez, Mario},
+  title     = {Design and Bench Evaluation of a Low-Cost Robotic Hand with Mechanically Coupled Distal Joints},
+  booktitle = {IEEE International Conference on Automation / XXVII Congress of the Chilean Association of Automatic Control (ICA-ACCA)},
+  address   = {Concepci{\'o}n, Chile},
+  year      = {2026}
+}
+```
 
 ## Acknowledgments
 
-The authors acknowledge the support of the Laboratorio de Mecatrónica Agroindustrial (LaMAI) at Universidad de Talca during the development of this work.
+The authors acknowledge the support of the Laboratorio de Mecatrónica Agroindustrial (LaMAI) at Universidad de Talca.
 
 ## License
 
-No open-source license has been assigned to this repository yet. Unless a license is added, all rights remain with the respective copyright holders. Please contact the authors regarding reuse or redistribution.
+No license has been assigned yet. Until one is added, all rights remain with the authors; please contact them regarding reuse or redistribution. Third-party components included in this repository (such as the STM32 HAL and CMSIS files in `firmware/Drivers`) remain under their own licenses.
