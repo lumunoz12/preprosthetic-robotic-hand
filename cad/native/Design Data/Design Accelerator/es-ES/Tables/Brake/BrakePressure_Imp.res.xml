@@ -1,0 +1,11 @@
+<Resources>
+  <string id="%1%" value="Presión de freno"/>
+  <string id="%2%" value="Material"/>
+  <string id="%3%" value="p[psi]"/>
+  <string id="%4%" value="Moldeado"/>
+  <string id="%5%" value="Tejido"/>
+  <string id="%6%" value="Metal sinterizado"/>
+  <string id="%7%" value="Corcho"/>
+  <string id="%8%" value="Madera"/>
+  <string id="%9%" value="Hierro fundido, acero endurecido"/>
+</Resources>

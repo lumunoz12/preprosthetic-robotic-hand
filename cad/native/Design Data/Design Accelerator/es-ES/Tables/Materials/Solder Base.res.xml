@@ -1,0 +1,11 @@
+<Resources>
+  <string id="%1%" value="Material de base"/>
+  <string id="%2%" value="Designación del material"/>
+  <string id="%3%" value="Presión admitida"/>
+  <string id="%4%" value="lpc"/>
+  <string id="%5%" value="Acero fundido"/>
+  <string id="%6%" value="Acero forjado a martillo"/>
+  <string id="%7%" value="Acero forjado"/>
+  <string id="%8%" value="Material"/>
+  <string id="%9%" value="||s||.al|"/>
+</Resources>

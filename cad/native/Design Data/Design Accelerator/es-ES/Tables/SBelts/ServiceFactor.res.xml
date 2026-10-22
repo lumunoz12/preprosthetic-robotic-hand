@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><Resources>
+  <string id="%1%" value="Factor de servicio"/>
+  <string id="%2%" value="Carga baja"/>
+  <string id="%3%" value="Carga uniforme"/>
+  <string id="%4%" value="Carga de impacto ligero"/>
+  <string id="%5%" value="Carga de impacto moderado"/>
+  <string id="%6%" value="Carga de impacto fuerte"/>
+  <string id="%7%" value="Servicio intermitente"/>
+  <string id="%8%" value="Servicio normal"/>
+  <string id="%9%" value="Servicio continuo"/>
+  <string id="%10%" value="3-8 horas diarias"/>
+  <string id="%11%" value="8-16 horas diarias"/>
+  <string id="%12%" value="16-24 horas diarias"/>
+  <string id="%13%" value="Impulsora"/>
+  <string id="%14%" value="Impulsada"/>
+  <string id="%15%" value="Par de torsión uniforme"/>
+  <string id="%16%" value="Par de torsión alto/no uniforme"/>
+</Resources>

@@ -1,0 +1,12 @@
+<Resources>
+  <string id="%1%" value="Material del pasador"/>
+  <string id="%2%" value="Designación del material"/>
+  <string id="%3%" value="Tensión de corte admitida"/>
+  <string id="%4%" value="MPa"/>
+  <string id="%5%" value="Acero gr. 37; 42; 4D"/>
+  <string id="%6%" value="Acero 11 600; 12 040; 12 050; 8G"/>
+  <string id="%7%" value="Acero 11 500; 5D"/>
+  <string id="%8%" value="Acero 11 700"/>
+  <string id="%9%" value="Material"/>
+  <string id="%10%" value="||t||.Al|"/>
+</Resources>

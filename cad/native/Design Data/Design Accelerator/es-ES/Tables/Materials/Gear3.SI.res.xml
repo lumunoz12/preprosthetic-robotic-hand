@@ -1,0 +1,79 @@
+<Resources>
+  <string id="%1%" value="Materiales de engranaje helicoidal (SI)"/>
+  <string id="%2%" value="Designación del material"/>
+  <string id="%3%" value="Tratamiento térmico"/>
+  <string id="%4%" value="Resistencia a tracción"/>
+  <string id="%5%" value="MPa"/>
+  <string id="%6%" value="Límite de elasticidad"/>
+  <string id="%7%" value="Dureza del lado del diente"/>
+  <string id="%8%" value="ul"/>
+  <string id="%9%" value="Límite de fatiga por contacto"/>
+  <string id="%10%" value="Límite de fatiga por plegado"/>
+  <string id="%11%" value="Número base de ciclos de carga en contacto"/>
+  <string id="%12%" value="Número base de ciclos de carga en plegado"/>
+  <string id="%13%" value="Exponente de curva de Wöhler para contacto"/>
+  <string id="%14%" value="Exponente de curva de Wöhler para plegado"/>
+  <string id="%15%" value="Módulo de elasticidad"/>
+  <string id="%16%" value="Coeficiente de Poisson"/>
+  <string id="%17%" value="Velocidad de deslizamiento máx."/>
+  <string id="%18%" value="m/s"/>
+  <string id="%19%" value="Descripción"/>
+  <string id="%20%" value="hierro fundido gris"/>
+  <string id="%21%" value="en arena"/>
+  <string id="%22%" value="latón CuZn35Pb1"/>
+  <string id="%23%" value="latón CuZn35AlFe3"/>
+  <string id="%24%" value="en fundición a presión"/>
+  <string id="%25%" value="fundición centrífuga"/>
+  <string id="%26%" value="bronce de aluminio CuAl9Fe3"/>
+  <string id="%27%" value="bronce de aluminio CuAl10Fe4Ni"/>
+  <string id="%28%" value="bronce de estaño CuSn5Zn5Pb5"/>
+  <string id="%29%" value="bronce de estaño CuSn8Zn6Pb3"/>
+  <string id="%30%" value="bronce de estaño CuSn10Ni1P1"/>
+  <string id="%31%" value="bronce de estaño CuSn12"/>
+  <string id="%32%" value="bronce de estaño CuSn10P1"/>
+  <string id="%33%" value="Norma"/>
+  <string id="%34%" value="Norma"/>
+  <string id="%35%" value="ANSI"/>
+  <string id="%36%" value="ISO"/>
+  <string id="%37%" value="DIN"/>
+  <string id="%38%" value="BS"/>
+  <string id="%39%" value="CSN"/>
+  <string id="%40%" value="GOST"/>
+  <string id="%41%" value="NF"/>
+  <string id="%42%" value="JIS"/>
+  <string id="%43%" value="Material"/>
+  <string id="%44%" value="Tratamiento térmico"/>
+  <string id="%45%" value="R|.m|"/>
+  <string id="%46%" value="R|.e|/R|.p02|"/>
+  <string id="%47%" value="VHV"/>
+  <string id="%48%" value="s|.Hlim|"/>
+  <string id="%49%" value="s|.Flim|"/>
+  <string id="%50%" value="N|.Hlim|"/>
+  <string id="%51%" value="N|.Flim|"/>
+  <string id="%52%" value="q|.H|"/>
+  <string id="%53%" value="q|.F|"/>
+  <string id="%54%" value="E"/>
+  <string id="%55%" value="||m|"/>
+  <string id="%56%" value="v. máx."/>
+  <string id="%57%" value="Desc."/>
+  <string id="%58%" value="DIN GG - 15"/>
+  <string id="%59%" value="DIN GG - 20"/>
+  <string id="%60%" value="DIN GG - 25"/>
+  <string id="%61%" value="DIN GG - 30"/>
+  <string id="%62%" value="CSN 422415"/>
+  <string id="%63%" value="CSN 422420"/>
+  <string id="%64%" value="CSN 422425"/>
+  <string id="%65%" value="CSN 422430"/>
+  <string id="%66%" value="CSN 423313"/>
+  <string id="%67%" value="CSN 423311"/>
+  <string id="%68%" value="CSN 423145"/>
+  <string id="%69%" value="CSN 423147"/>
+  <string id="%70%" value="CSN 423135"/>
+  <string id="%71%" value="CSN 423137"/>
+  <string id="%72%" value="CSN 423123"/>
+  <string id="%73%" value="CSN 423120"/>
+  <string id="%74%" value="K|.w|"/>
+  <string id="%75%" value="Resistencia a fatiga por contacto"/>
+  <string id="%76%" value="S|.n|"/>
+  <string id="%77%" value="Resistencia a fatiga por plegado"/>
+</Resources>

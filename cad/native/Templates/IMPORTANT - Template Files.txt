@@ -1,0 +1,11 @@
+INFORMACIÓN IMPORTANTE PARA LAS PERSONAS QUE USAN VARIOS PAQUETES DE IDIOMAS
+
+Dirigida a:
+ - Cualquier persona que instale varios paquetes de idiomas y mantenga la ubicación de instalación de la plantilla predeterminada (C:\Users\Public\Documents\Autodesk\Inventor release year\Templates).
+ - Cualquier persona que almacene y use plantillas personalizadas en la carpeta C:\Users\Public\Documents\Autodesk\Inventor release year\Templates.
+
+Inventor cuenta con paquetes de idiomas compatibles para varias versiones. Esto permitía la instalación de varios idiomas en una única instalación de Inventor y alternar entre ellos a través del acceso directo del menú Inicio (que utiliza un parámetro /language).  
+
+Aunque los paquetes de idiomas instalaban archivos de plantilla traducidos, al iniciar diferentes idiomas en Inventor no se cambiaban las plantillas que se usaban de forma predeterminada. 
+
+Con Inventor 2020, todos los paquetes de idiomas se instalan y se gestionan de la misma forma. Ahora ya no es necesario copiar las plantillas en la carpeta principal, porque la ruta del archivo de plantilla se actualiza cuando se cambian los idiomas. De esta manera, se simplifica el uso y el mantenimiento de las plantillas, ya sean predeterminadas o personalizadas. 

@@ -1,0 +1,6 @@
+<Resources>
+  <string id="%1%" value="Factor de diseño de acoplamiento"/>
+  <string id="%2%" value="Conexión fija"/>
+  <string id="%3%" value="Acoplamiento deslizante sin carga"/>
+  <string id="%4%" value="Acoplamiento deslizante durante la carga"/>
+</Resources>

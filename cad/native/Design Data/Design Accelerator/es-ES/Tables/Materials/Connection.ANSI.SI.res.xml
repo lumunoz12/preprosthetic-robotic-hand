@@ -1,0 +1,20 @@
+<Resources>
+  <string id="%1%" value="Material de la ranura"/>
+  <string id="%2%" value="Designación del material"/>
+  <string id="%3%" value="Número de dureza de Brinell"/>
+  <string id="%4%" value="su"/>
+  <string id="%5%" value="Número de dureza de Vicker (pirámide)"/>
+  <string id="%6%" value="Tensión de compresión admitida"/>
+  <string id="%7%" value="MPa"/>
+  <string id="%8%" value="Tensión de corte admitida"/>
+  <string id="%9%" value="Acero"/>
+  <string id="%10%" value="Acero de superficie templada"/>
+  <string id="%11%" value="Acero de cementación"/>
+  <string id="%12%" value="Material"/>
+  <string id="%13%" value="B|.hn|"/>
+  <string id="%14%" value="HV"/>
+  <string id="%15%" value="S|.c|"/>
+  <string id="%16%" value="S|.s|"/>
+  <string id="%17%" value="Tensión de tracción admitida"/>
+  <string id="%18%" value="S|.t|"/>
+</Resources>

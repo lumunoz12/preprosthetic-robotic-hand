@@ -1,0 +1,19 @@
+<Resources>
+  <string id="%1%" value="Ajuste preferido(métrico)"/>
+  <string id="%2%" value="Nombre de ajuste"/>
+  <string id="%3%" value="Transición=1 Interferencia=2 Juego=3"/>
+  <string id="%4%" value="Agujero único=1 Eje único=2"/>
+  <string id="%5%" value="La descripción del uso del ajuste"/>
+  <string id="%10%" value="Conexión de presión fija con juego imperceptible o interferencia pequeña \nEnsamblado utilizando una fuerza pequeña\nUtilizado para la sujeción de motores eléctricos en ejes, engranajes o pernos ajustados"/>
+  <string id="%11%" value="Conexión de presión constante con juego pequeño o interferencia pequeña\nEnsamblado usando un martillo de cobre o goma\n Utilizado para presiones de conexión de desmontaje para bridas de engranajes, poleas etc."/>
+  <string id="%12%" value="Conexión de presión deslizante con juego pequeño e interferencia imperceptible\nEnsamblado a mano\nUtilizado para facilitar el desmontaje de juntas de engranajes, poleas, mangas, etc."/>
+  <string id="%13%" value="Conexión de presión con una interferencia grande\nEnsamblado utilizando una fuerza grande a diferentes temperaturas\nde los componentes\nUtilizado para bridas de engranajes o bridas conectadas al eje"/>
+  <string id="%14%" value="Conexión de presión con interferencia media\nEnsamblado utilizando una fuerza grande. Se ofrecen\ndiferentes temperaturas del agujero y el eje.\nUtilizado para bridas de discos de embrague o manguitos del rodamiento"/>  
+  <string id="%15%" value="Conexión de ajuste de corte con juego imperceptible\nColocado sin fuerza mayor\nLos componentes se pueden desplazar a mano tras la lubricación\nRuedas intercambiables, anillas de cierre, transporte circular"/>
+  <string id="%16%" value="Conexión de ajuste de corte\nColocado sin fuerza mayor\nLos componentes se pueden desplazar a mano tras la lubricación\nElementos de desmontaje ligero, anilla ensanchadora,\nComponentes de maquinaria agrícola fijados a ejes con basculantes,\ntornillos o juntas de camisa"/>
+  <string id="%17%" value="Conexión de ajuste rotatorio con juego muy pequeño\nEnsamblaje ensamblado actualmente sin juego apreciable\nEngranajes de ruedas deslizantes y ruedas de embrague o varillas corredizas en rodamientos"/>
+  <string id="%18%" value="Conexiones de ajuste rotatorio\nEnsamblaje con juego apreciable\nConexiones de ajuste principales para maquinaria de fabricación\nConexiones de ajuste de varillas deslizantes o cigüeñales"/>
+  <string id="%19%" value="Conexiones de ajuste rotatorio con más juego\nEnsamblaje con juego mayor\nConexiones de ajuste para ejes ensamblados largos, por ejemplo de maquinaria agrícola"/>
+  <string id="%20%" value="Conexión de ajuste rotatorio con juego considerable\nEnsamblaje con un juego grande\nVarios ejes ensamblados de maquinaria de fabricación y pistones,\nEjes de varillas circulares de acero fundido"/>
+  <string id="%21%" value="Conexiones de ajuste con un juego grande de piezas con gran tolerancia\nEnsamblaje con juego máximo\nTapones rotatorios, pernos, tornillos de grillete de barras de freno,\nConexiones de ajuste para piezas que se van a soldar"/>
+</Resources>

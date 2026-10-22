@@ -1,0 +1,9 @@
+<Resources>
+  <string id="%1%" value="Coeficiente de fricción de rosca"/>
+  <string id="%2%" value="Superficie de rosca"/>
+  <string id="%3%" value="No lubricado"/>
+  <string id="%4%" value="Lubricado"/>
+  <string id="%5%" value="revestimiento de fosfato o negro"/>
+  <string id="%6%" value="revestimiento de zinc galvánico"/>
+  <string id="%7%" value="revestimiento electrolítico de cadmio"/>
+</Resources>

@@ -1,0 +1,14 @@
+<Resources>
+  <string id="%1%" value="Muelle cónico - ANSI"/>
+  <string id="%2%" value="Nombre"/>
+  <string id="%3%" value="Designación de muelle"/>
+  <string id="%4%" value="D"/>
+  <string id="%5%" value="Diámetro exterior"/>
+  <string id="%6%" value="in"/>
+  <string id="%7%" value="Diámetro interior"/>
+  <string id="%8%" value="d"/>
+  <string id="%9%" value="Grosor del material"/>
+  <string id="%10%" value="t"/>
+  <string id="%11%" value="Altura sin carga"/>
+  <string id="%12%" value="H"/>
+</Resources>

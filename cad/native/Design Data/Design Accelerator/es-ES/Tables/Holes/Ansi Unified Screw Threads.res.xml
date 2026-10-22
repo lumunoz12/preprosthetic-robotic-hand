@@ -1,0 +1,17 @@
+<Resources>
+  <string id="%1%" value="Diámetro nominal"/>
+  <string id="%2%" value="Juego próximo"/>
+  <string id="%3%" value="Juego normal"/>
+  <string id="%4%" value="Juego suelto"/>
+  <string id="%5%" value="Diámetro de cabeza"/>
+  <string id="%6%" value="Profundidad del escariado"/>
+  <string id="%7%" value="Ángulo del avellanado"/>
+  <string id="%8%" value="Roscas de tornillo unificadas ANSI"/>
+  <string id="%9%" value="Tornillo para maquinaria de cabeza plana ANSI (82)"/>
+  <string id="%10%" value="Tornillo para maquinaria de cabeza plana ANSI (100)"/>
+  <string id="%11%" value="Tornillo de cabeza hexagonal ANSI"/>
+  <string id="%12%" value="Tornillo para maquinaria de cabeza hex. ANSI"/>
+  <string id="%13%" value="Tornillo para maquinaria de cabeza ovalada ANSI"/>
+  <string id="%14%" value="Tornillo de cabeza redondeada hueca ANSI"/>
+  <string id="%15%" value="Tornillo para maquinaria de cabeza plana ANSI (80)"/>
+</Resources>

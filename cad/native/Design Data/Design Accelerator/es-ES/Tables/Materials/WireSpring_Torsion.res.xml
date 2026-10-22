@@ -1,0 +1,33 @@
+<Resources>
+<string id="%1%" value="Material del muelle"/>
+<string id="%2%" value="Designación del material"/>
+<string id="%3%" value="Densidad"/>
+<string id="%4%" value="lb/pies^3"/>
+<string id="%5%" value="Módulo extensible"/>
+<string id="%6%" value="psi"/>
+<string id="%7%" value="Coeficiente entre tensión de plegado admitida y resistencia máxima a tracción"/>
+<string id="%8%" value="Tensión de tracción máxima"/>
+<string id="%9%" value="Conductor de instrumentos musicales QQ-W-470"/>
+<string id="%10%" value="Conductor de acero revenido en aceite QQ-W-428"/>
+<string id="%11%" value="Conductor de acero endurecido por estiramiento en frío QQ-W-428"/>
+<string id="%12%" value="Conductor de acero al cromovanadio"/>
+<string id="%13%" value="Conductor de acero aleado con silicio al cromo QQ-W-412"/>
+<string id="%14%" value="Acero inoxidable 302 y 304"/>
+<string id="%15%" value="Acero inoxidable 420"/>
+<string id="%16%" value="Acero inoxidable 431"/>
+<string id="%17%" value="Acero inoxidable 316"/>
+<string id="%18%" value="Acero inoxidable 17-7PH"/>
+<string id="%19%" value="ANSI"/>
+<string id="%20%" value="Material"/>
+<string id="%21%" value="Norma"/>
+<string id="%22%" value="Norma"/>
+<string id="%23%" value="R|.o|"/>
+<string id="%24%" value="E"/>
+<string id="%25%" value="Coefs"/>
+<string id="%26%" value="WD"/>
+<string id="%27%" value="Diámetros de conductor"/>
+<string id="%28%" value="pulg."/>
+<string id="%29%" value="||s||.ult|"/>
+<string id="%30%" value="Diámetros de conductor y Resistencia máxima a tracción"/>
+<string id="%31%" value="su"/>
+</Resources>

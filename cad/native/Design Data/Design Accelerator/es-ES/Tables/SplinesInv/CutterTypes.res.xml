@@ -1,0 +1,14 @@
+<Resources>
+  <string id="%1%" value="DIN 5480 - Tipos de corte"/>
+  <string id="%2%" value="Tipo"/>
+  <string id="%3%" value="Acabado de flancos"/>
+  <string id="%4%" value="h|.aP0|"/>
+  <string id="%5%" value="Coeficiente de altura de la cabeza de diente"/>  
+  <string id="%6%" value="ul"/>
+  <string id="%7%" value="Fresado"/>
+  <string id="%8%" value="Saliente"/>  
+  <string id="%9%" value="Brocha"/> 
+  <string id="%10%" value="Fijo"/>   
+  <string id="%11%" value="c|.FP0|"/>  
+  <string id="%12%" value="Coeficiente"/>      
+</Resources>

@@ -1,0 +1,26 @@
+<Resources>
+  <string id="%1%" value="Materiales de la conexión a presión"/>
+  <string id="%2%" value="Designación del material"/>
+  <string id="%3%" value="Coeficiente de Poisson"/>
+  <string id="%4%" value="ul"/>
+  <string id="%5%" value="Módulo de elasticidad"/>
+  <string id="%6%" value="lpc"/>
+  <string id="%7%" value="Tensión admitida"/>
+  <string id="%8%" value="Expansión térmica"/>
+  <string id="%9%" value="m/mf"/>
+  <string id="%10%" value="Expansión térmica de enfriamiento"/>
+  <string id="%11%" value="Acero"/>
+  <string id="%12%" value="Hierro fundido maleable"/>
+  <string id="%13%" value="Acero inoxidable"/>
+  <string id="%14%" value="Latón"/>
+  <string id="%15%" value="Bronce"/>
+  <string id="%16%" value="Aleación de aluminio"/>
+  <string id="%17%" value="Aleación de magnesio"/>
+  <string id="%18%" value="Hierro fundido"/>
+  <string id="%19%" value="Material"/>
+  <string id="%20%" value="||m|"/>
+  <string id="%21%" value="E"/>
+  <string id="%22%" value="p|.A|"/>
+  <string id="%23%" value="||a|"/>
+  <string id="%24%" value="||a||.1|"/>
+</Resources>

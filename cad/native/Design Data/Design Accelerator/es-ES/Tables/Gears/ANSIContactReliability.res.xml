@@ -1,0 +1,7 @@
+<Resources>
+  <string id="%1%" value="Tabla de factores de fiabilidad"/>
+  <string id="%2%" value="99,9% de fiabilidad"/>
+  <string id="%3%" value="99% de fiabilidad"/>
+  <string id="%4%" value="90% de fiabilidad"/>
+  <string id="%5%" value="50% de fiabilidad"/>
+</Resources>

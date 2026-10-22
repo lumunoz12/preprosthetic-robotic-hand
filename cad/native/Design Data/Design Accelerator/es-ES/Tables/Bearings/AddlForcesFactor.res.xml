@@ -1,0 +1,20 @@
+<Resources>
+  <string id="%1%" value="Factor de fuerzas adicionales"/>
+  <string id="%2%" value="Factor"/>
+  <string id="%3%" value="Tipo de máquina"/>
+  <string id="%4%" value="Máquinas rotativas eléctricas, turbocompresores, turbinas"/>
+  <string id="%5%" value="Maquinaria de pistones y ferrocarril"/>
+  <string id="%6%" value="Cintas transportadoras, teleféricos, bombas, ventiladores"/>
+  <string id="%7%" value="Grúas, ascensores, ventiladores de minas"/>
+  <string id="%8%" value="Ascensores de minas y bombas"/>
+  <string id="%9%" value="Bombas de pistones y compresores"/>
+  <string id="%10%" value="Cubas de amalgamación, molinos tubulares y de martillos, trituradores"/>
+  <string id="%11%" value="Maquinaria para extracción de tierra, máquinas taladradoras de gran profundidad"/>
+  <string id="%12%" value="Tambores de secado"/>
+  <string id="%13%" value="Maquinaria para papel y textiles"/>
+  <string id="%14%" value="Maquinaria para procesado de alimentos"/>
+  <string id="%15%" value="Molinos; máquinas taladradoras, fresadoras, sierras, máquinas para cortar madera"/>
+  <string id="%16%" value="Tornos, maquinaria para cortar con movimiento de vaivén"/>
+  <string id="%17%" value="Laminadores, martillos de forja, cizalladoras de chapa, troquel. m."/>
+  <string id="%18%" value="Tren desbastador y molinos de despiece"/>
+</Resources>

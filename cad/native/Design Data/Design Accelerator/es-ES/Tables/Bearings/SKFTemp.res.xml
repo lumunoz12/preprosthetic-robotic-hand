@@ -1,0 +1,5 @@
+<Resources>
+  <string id="%1%" value="Factor de disminución de tasa de carga de rodamiento en función de la temperatura de trabajo (SKF)"/>
+  <string id="%2%" value="Temperatura"/>
+  <string id="%3%" value="Factor de disminución de tasa de carga"/>
+</Resources>

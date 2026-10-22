@@ -1,0 +1,16 @@
+<Resources>
+  <string id="%1%" value="Factor de aplicación"/>
+  <string id="%2%" value="Uniforme"/>
+  <string id="%3%" value="Impacto ligero"/>
+  <string id="%4%" value="Impacto intermitente"/>
+  <string id="%5%" value="Impacto fuerte"/>
+  <string id="%6%" value="Uniforme (turbina, motor)"/>
+  <string id="%7%" value="Ligero	(motor hidráulico)"/>
+  <string id="%8%" value="Medio (combustión interna, motor)"/>
+  <string id="%9%" value="Tipo de carga"/>
+  <string id="%10%" value="Fuente de alimentación"/>
+  <string id="%11%" value="(Generador-ventilador)"/>
+  <string id="%12%" value="(Oscilantes, bombas, etc.)"/>
+  <string id="%13%" value="(Bomba de accionamiento)"/>
+  <string id="%14%" value="(Punzonados, cizalladoras, etc.)"/>  
+</Resources>

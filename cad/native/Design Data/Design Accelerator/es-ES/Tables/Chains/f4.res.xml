@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><Resources>
+  <string id="%1%" value="Factor de lubricación"/>
+  <string id="%2%" value="Velocidad de la cadena"/>
+  <string id="%3%" value="Método de lubricación"/>
+  <string id="%4%" value="Lubricación recomendada"/>
+  <string id="%5%" value="Lubricación aceptable"/>
+  <string id="%6%" value="Sin fugas"/>
+  <string id="%7%" value="Insuficiente"/>
+  <string id="%8%" value="Sin lubricación"/>
+  <string id="%9%" value="Limpia"/>
+  <string id="%10%" value="Sucia"/>
+  <string id="%11%" value="Hasta 4 m/s"/>
+  <string id="%12%" value="Hasta 7 m/s"/>
+  <string id="%13%" value="Hasta 12 m/s"/>
+  <string id="%14%" value="Más de 12 m/s"/>
+  <string id="%15%" value="Alimentación por goteo"/>
+  <string id="%16%" value="Lubricación manual"/>
+  <string id="%17%" value="Inadmisible"/>
+  <string id="%18%" value="Baño de aceite o disco"/>
+  <string id="%19%" value="Alimentación por goteo"/>
+  <string id="%20%" value="Alimentación forzada"/>
+  <string id="%21%" value="Vapor de aceite, alimentación forzada"/>
+v</Resources>

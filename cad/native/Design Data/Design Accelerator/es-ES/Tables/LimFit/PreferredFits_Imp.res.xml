@@ -1,0 +1,20 @@
+<Resources>
+  <string id="%1%" value="Ajuste preferido (Imperial)"/>
+  <string id="%2%" value="Nombre de ajuste"/>
+  <string id="%3%" value="Transición=1 Interferencia=2 Juego=3"/>
+  <string id="%4%" value="Agujero único=1 Eje único=2"/>
+  <string id="%5%" value="La descripción del uso del ajuste"/>
+  <string id="%10%" value="Ajustes de transición de localización\nA camino entre los ajustes de juego y los ajustes de interferencia.\nSe utilizan cuando la precisión de la localización es importante."/>
+  <string id="%11%" value="Ajustes de interferencia de localización\nSe utilizan cuando la precisión de la localización es de suma importancia.\nNo aptos en el caso de piezas diseñadas para transmitir cargas funcionales de\nuna pieza a otra mediante el apriete del ajuste."/>
+  <string id="%12%" value="Ajustes para transmisión media\nAptos para piezas corrientes de acero o para ajustes por contracción en secciones livianas."/>
+  <string id="%13%" value="Ajustes para transmisión pesada\nAptos para piezas de acero más pesadas o para ajustes por contracción en secciones medias."/>
+  <string id="%14%" value="Ajustes forzados\nAptos para piezas que pueden soportar altos niveles de tensión o para ajustes por contracción en que\nlas fuerzas de presión necesarias son impracticables."/>
+  <string id="%15%" value="Ajustes deslizantes apretados\nPara la ubicación precisa de piezas que\ndeben ensamblarse sin juego perceptible."/>
+  <string id="%16%" value="Ajustes deslizantes\nPara una ubicación precisa.\nLas piezas se desplazan y se giran fácilmente, si bien no se busca que se muevan libremente."/>
+  <string id="%17%" value="Ajustes móviles de precisión\nPara un trabajo preciso a baja velocidad y\nalta presión de cojinetes transversales livianos."/>
+  <string id="%18%" value="Ajustes móviles apretados\nPara ajustes móviles en maquinaria de precisión\na presión de cojinete transversal y velocidades de superficie moderadas."/>
+  <string id="%19%" value="Ajustes móviles medios\nPara velocidades más altas de movimiento o presiones de cojinete transversal más fuertes."/>
+  <string id="%20%" value="Ajustes móviles no controlados\nPara utilizar cuando la precisión no es esencial o\npuede haber grandes fluctuaciones de temperatura."/>
+  <string id="%21%" value="Ajustes móviles libres\nPara su uso cuando se requieran amplias tolerancias comerciales,\nademás de una sobremedida, en el miembro externo."/>
+  <string id="%22%" value="Ajustes de juego de localización\nPara piezas fijas,\npero que pueden ensamblarse o desensamblarse libremente."/>
+</Resources>

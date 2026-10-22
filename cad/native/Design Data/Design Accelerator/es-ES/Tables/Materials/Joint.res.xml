@@ -1,0 +1,21 @@
+<Resources>
+  <string id="%1%" value="Material de la junta"/>
+  <string id="%2%" value="Designación del material"/>
+  <string id="%3%" value="Presión admitida (carga estática)"/>
+  <string id="%4%" value="lpc"/>
+  <string id="%5%" value="Módulo de elasticidad"/>
+  <string id="%6%" value="Acero gr. 37; 42"/>
+  <string id="%7%" value="Acero gr. 50"/>
+  <string id="%8%" value="Acero gr. 60"/>
+  <string id="%9%" value="Acero gr. 70"/>
+  <string id="%10%" value="Acero fundido"/>
+  <string id="%11%" value="Hierro fundido gris"/>
+  <string id="%12%" value="Bronce"/>
+  <string id="%13%" value="Material"/>
+  <string id="%14%" value="||s||.A1|"/>
+  <string id="%15%" value="E"/>
+  <string id="%16%" value="Presión admitida (carga repetida)"/>
+  <string id="%17%" value="Presión admitida (carga alterna)"/>
+  <string id="%18%" value="||s||.A2|"/>
+  <string id="%19%" value="||s||.A3|"/>
+</Resources>

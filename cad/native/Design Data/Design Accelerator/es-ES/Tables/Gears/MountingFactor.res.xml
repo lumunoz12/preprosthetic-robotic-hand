@@ -1,0 +1,11 @@
+<Resources>
+  <string id="%1%" value="Factor de montaje"/>
+  <string id="%2%" value="Característica de soporte"/>
+  <string id="%3%" value="Anchura de cara [pulg.]"/>
+  <string id="%4%" value="De 0 a 2"/>
+  <string id="%5%" value="Hasta 16"/>
+  <string id="%6%" value="Montajes precisos, juegos de rodamientos pequeños, flexión mínima, engranajes de precisión"/>
+  <string id="%7%" value="Montajes menos rígidos, engranajes menos precisos, contacto en toda la cara"/>
+  <string id="%8%" value="Precisión y montaje con contacto menor que la cara completa"/>
+  <string id="%9%" value="más de 2,2"/>
+</Resources>

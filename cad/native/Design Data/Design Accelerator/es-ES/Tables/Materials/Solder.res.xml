@@ -1,0 +1,13 @@
+<Resources>
+  <string id="%1%" value="Material de la junta"/>
+  <string id="%2%" value="Designación del material"/>
+  <string id="%3%" value="Resistencia a tracción de la junta"/>
+  <string id="%4%" value="lpc"/>
+  <string id="%5%" value="Resistencia a corte de la junta"/>
+  <string id="%6%" value="Soldadura de estaño"/>
+  <string id="%7%" value="Soldadura de cobre"/>
+  <string id="%8%" value="Soldadura de plata"/>
+  <string id="%9%" value="Material"/>
+  <string id="%10%" value="S||.s|"/>
+  <string id="%11%" value="S||.t|"/>
+</Resources>

@@ -1,0 +1,41 @@
+<Resources>
+<string id="%1%" value="Material del muelle"/>
+<string id="%2%" value="Designación del material"/>
+<string id="%3%" value="Densidad"/>
+<string id="%4%" value="kg/m^3"/>
+<string id="%5%" value="Módulo cortante"/>
+<string id="%6%" value="MPa"/>
+<string id="%7%" value="Coeficiente entre tensión de torsión admitida y resistencia máxima a tracción"/>
+<string id="%8%" value="Tensión de tracción máxima"/>
+<string id="%9%" value="Estirado y patentado - Acero al carbono - primera clase"/>
+<string id="%10%" value="Estirado y patentado - Acero al carbono - segunda clase"/>
+<string id="%11%" value="Estirado y patentado - Acero al carbono - tercera clase"/>
+<string id="%12%" value="Estirado y patentado - Acero al carbono - cuarta clase"/>
+<string id="%13%" value="Estirado y patentado - Acero al carbono - quinta clase"/>
+<string id="%14%" value="Conductor de acero al carbono tratado térmicamente"/>
+<string id="%15%" value="Conductor tratado térmicamente - Acero Si-Cr (14 260)"/>
+<string id="%16%" value="Conductor recocido - Acero Si-Cr (14 260)"/>
+<string id="%17%" value="Conductor tratado térmicamente - Acero Mn-Cr-V (15 260)"/>
+<string id="%18%" value="Conductor recocido - Acero Mn-Cr-V (15 260)"/>
+<string id="%19%" value="Conductor estirado - Acero inoxidable Cr-Ni (17 242)"/>
+<string id="%20%" value="Bronce de estaño estirado (42 3016 y 42 3018)"/>
+<string id="%21%" value="Latón estirado (42 3210 y 42 3213)"/>
+<string id="%22%" value="Material"/>
+<string id="%23%" value="Norma"/>
+<string id="%24%" value="Norma"/>
+<string id="%25%" value="R|.o|"/>
+<string id="%26%" value="G"/>
+<string id="%27%" value="Coefs"/>
+<string id="%28%" value="WD"/>
+<string id="%29%" value="Diámetros de conductor"/>
+<string id="%30%" value="mm"/>
+<string id="%31%" value="||s||.ult|"/>
+<string id="%32%" value="ISO"/>
+<string id="%33%" value="DIN"/>
+<string id="%34%" value="Diámetros de conductor y Resistencia máxima a tracción"/>
+<string id="%35%" value="su"/>
+<string id="%36%" value="Conductor de acero, clase 1"/>
+<string id="%37%" value="Conductor de acero, clase 2 y 2A"/>
+<string id="%38%" value="Conductor de acero, clase 3"/>
+<string id="%39%" value="GOST"/>
+</Resources>

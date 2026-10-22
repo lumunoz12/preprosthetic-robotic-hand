@@ -1,0 +1,17 @@
+<Resources>
+  <string id="%1%" value="Coeficiente de fricción"/>
+  <string id="%2%" value="Material"/>
+  <string id="%3%" value="No lubricado"/>
+  <string id="%4%" value="Lubricado"/>
+  <string id="%5%" value="acero - acero"/>
+  <string id="%6%" value="acero - hierro fundido"/>
+  <string id="%7%" value="acero - latón"/>
+  <string id="%8%" value="acero - latón"/>
+  <string id="%9%" value="hierro fundido - hierro fundido"/>
+  <string id="%10%" value="hierro fundido - bronce"/>
+  <string id="%11%" value="bronce - bronce"/>
+  <string id="%12%" value="aluminio - aluminio"/>
+  <string id="%13%" value="cobre - cobre"/>
+  <string id="%14%" value="acero - plexiglás"/>
+  <string id="%15%" value="plexiglás - plexiglás"/>
+</Resources>

@@ -1,0 +1,13 @@
+<Resources>
+  <string id="%1%" value="Material de la ranura"/>
+  <string id="%2%" value="Designación del material"/>
+  <string id="%3%" value="Tensión de tracción admitida máxima"/>
+  <string id="%4%" value="lpc"/>
+  <string id="%5%" value="Acero templado"/>
+  <string id="%6%" value="Material"/>
+  <string id="%7%" value="S|.u|"/>
+  <string id="%8%" value="Dureza"/>
+  <string id="%9%" value="HRC"/>
+  <string id="%10%" value="Dureza de los lados del diente"/>
+  <string id="%11%" value="su"/>
+</Resources>

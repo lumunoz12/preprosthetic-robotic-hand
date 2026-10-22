@@ -1,0 +1,7 @@
+<Resources>
+  <string id="%1%" value="Factor de vida útil de fatiga"/>
+  <string id="%2%" value="Unidireccional"/>
+  <string id="%3%" value="Totalmente invertida"/>
+  <string id="%4%" value="Nº de ciclos de par de torsión"/>
+  <string id="%5%" value="Factor de vida útil de fatiga, Kf"/>
+</Resources>

@@ -1,0 +1,15 @@
+<Resources>
+  <string id="%1%" value="Material de eje de articulación"/>
+  <string id="%2%" value="Designación del material"/>
+  <string id="%3%" value="Presión de plegado admitida"/>
+  <string id="%4%" value="lpc"/>
+  <string id="%5%" value="Tensión de corte admitida"/>
+  <string id="%7%" value="Acero al carbono 1211; 1212; 1213"/>
+  <string id="%8%" value="Acero rico en carbono 1070 - 1095"/>
+  <string id="%9%" value="Acero inoxidable 302"/>
+  <string id="%10%" value="Acero inoxidable 410 - 420"/>
+  <string id="%11%" value="Acero aleado 6150H"/>
+  <string id="%12%" value="Material"/>
+  <string id="%13%" value="||s||.BA|"/>
+  <string id="%14%" value="||t||.Al|"/>
+</Resources>
