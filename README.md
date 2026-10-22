@@ -77,10 +77,12 @@ The files were developed and run with the following versions. Other versions hav
 | MATLAB | R2025a (25.1), Windows 11 Pro | All scripts and models |
 | Simulink, Simscape, Simscape Multibody | R2025a | Grasp simulation models |
 | System Identification Toolbox, Control System Toolbox | R2025a | `LQR_motorV2.m` (`ssest`, `c2d`, `dlqr`) |
-| Autodesk Inventor Professional | 2021 (Build 183) and 2026 (Build 175, Release 2026.0.1) | Native CAD files |
+| Simscape Multibody Link | R2025a | CAD export from Inventor 2021 to Simscape Multibody |
+| Autodesk Inventor Professional | 2026 (Build 175, Release 2026.0.1) | Drawings, assemblies and renderings |
+| Autodesk Inventor Professional | 2021 (Build 183) | Base model for export to Simscape Multibody |
 | STM32CubeIDE | 1.19.0 | Firmware build and flashing |
 
-Inventor files cannot be opened in a release older than the one that last saved them, so Inventor 2026 or later is recommended.
+Two Inventor releases were used. Inventor 2026 was used for drawings, assemblies and renderings. Inventor 2021 was used for the base model exported to Simscape Multibody through the Simscape Multibody Link plug-in, because the plug-in was only available for Inventor up to the 2021 release. Inventor files cannot be opened in a release older than the one that last saved them.
 
 Physical testing requires the STM32F767ZI board, H-bridge drivers, ten N20 encoder gearmotors, two FSRs and the printed hand, as described in the paper and in `firmware/README.md`.
 
