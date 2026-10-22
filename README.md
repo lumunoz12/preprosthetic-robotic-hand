@@ -43,10 +43,10 @@ Per-object outcomes are reported in Table IV of the paper and in `data/Test_Hand
 ├── README.md
 ├── cad/        Autodesk Inventor project and STL files for 3D printing
 ├── firmware/   STM32CubeIDE project for the STM32F767ZI controller
-├── matlab/     Simscape Multibody grasp models, kinematics, grasp setpoint,
-│               motor identification/LQR and encoder-comparison scripts
+├── matlab/     MATLAB scripts and the MATLAB project with the Simscape
+│               Multibody grasp models
 ├── data/       Motor step test, FSR calibration and bench grasp trials
-└── docs/       Paper and documentation index
+└── docs/       Images used in the documentation
 ```
 
 Each folder has its own `README.md` with contents, usage notes and limitations.
@@ -56,12 +56,12 @@ Each folder has its own `README.md` with contents, usage notes and limitations.
 | Paper content | Location |
 |---|---|
 | Mechanical design (Sec. II, Figs. 1–2, Table I) | `cad/` |
-| Four-bar kinematics and hand kinematics (Sec. II) | `matlab/scripts/` |
-| Encoder vs. AS5600 comparison (Sec. III-A) | `matlab/scripts/graficar_motorN20.m`, `matlab/scripts/datos_motor.mat` |
+| Four-bar kinematics and hand kinematics (Sec. II) | `matlab/script/` |
+| Encoder vs. AS5600 comparison (Sec. III-A) | `matlab/script/graficar_motorN20.m`, `matlab/script/datos_motor.mat` |
 | FSR characterization (Sec. III-A, Eq. 3) | `data/FSR.xlsx` |
-| Motor identification and LQR design (Sec. III-B, Eqs. 4, 5, 7, 8) | `matlab/scripts/LQR_motorV2.m`, `data/escalon_motor2.csv` |
+| Motor identification and LQR design (Sec. III-B, Eqs. 4, 5, 7, 8) | `matlab/script/LQR_motorV2.m`, `data/escalon_motor2.csv` |
 | Embedded control and grasp execution (Sec. III, Fig. 3, Eqs. 2, 6, 9) | `firmware/` |
-| Simscape Multibody simulations (Sec. IV, Table III) | `matlab/models/` |
+| Simscape Multibody simulations (Sec. IV, Table III) | `matlab/simulink/` |
 | Bench trials (Sec. IV–V, Tables II, IV, V) | `data/Test_Hand.xlsx` |
 | Budget (Table VI) | Paper |
 
@@ -81,6 +81,7 @@ The files were developed and run with the following versions. Other versions hav
 | MATLAB | R2025a (25.1), Windows 11 Pro | All scripts and models |
 | Simulink, Simscape, Simscape Multibody | R2025a | Grasp simulation models |
 | System Identification Toolbox, Control System Toolbox | R2025a | `LQR_motorV2.m` (`ssest`, `c2d`, `dlqr`) |
+| Statistics and Machine Learning Toolbox | R2025a | `graficar_motorN20.m` (`normpdf`) |
 | Simscape Multibody Link | R2025a | CAD export from Inventor 2021 to Simscape Multibody |
 | Autodesk Inventor Professional | 2026 (Build 175, Release 2026.0.1) | Drawings, assemblies and renderings |
 | Autodesk Inventor Professional | 2021 (Build 183) | Base model for export to Simscape Multibody |
