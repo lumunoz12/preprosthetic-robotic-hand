@@ -24,19 +24,19 @@ firmware/
 ├── Drivers/
 │   ├── CMSIS/                       Arm CMSIS and ST device headers
 │   └── STM32F7xx_HAL_Driver/        ST HAL and LL drivers
+├── Debug/                           Build output of the Debug configuration (regenerated when building)
 ├── final.ioc                        STM32CubeMX configuration (pins, clocks, peripherals)
 ├── final Debug.launch               Debug launch configuration
 ├── STM32F767ZITX_FLASH.ld           Linker script (flash)
 ├── STM32F767ZITX_RAM.ld             Linker script (RAM)
 ├── .project, .cproject, .mxproject  STM32CubeIDE project files
+├── .settings/                       STM32CubeIDE project settings
 └── README.md
 ```
 
 The files in `Drivers/` are distributed by ST and Arm under their own licenses; see the `LICENSE.txt` files in `Drivers/CMSIS/`, `Drivers/CMSIS/Device/ST/STM32F7xx/` and `Drivers/STM32F7xx_HAL_Driver/`.
 
-`cyl_targets.c` and `cyl_targets.h` are also stored in `matlab/scripts/`. Keep both copies identical if either is modified.
-
-Build output (`Debug/`, `.elf`, `.map`, `.list`) is not included.
+`cyl_targets.c` and `cyl_targets.h` are also stored in `matlab/simulink/script/`. Keep both copies identical if either is modified.
 
 ## Requirements
 
