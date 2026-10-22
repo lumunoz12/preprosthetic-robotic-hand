@@ -6,9 +6,8 @@ Mechanical design files of the five-finger robotic hand. The palm, fingers, cove
 
 ```text
 cad/
-├── native/        # Autodesk Inventor project: parts (.ipt), assemblies (.iam), drawings (.idw/.dwg), presentations (.ipn), project file (mano_VF.ipj)
+├── native/        # Autodesk Inventor project: parts (.ipt), assemblies (.iam), project file (mano_VF.ipj)
 ├── stl/           # STL files for 3D printing (50 files)
-├── step/          # STEP files of the hand parts (33 files); copies used by the Simscape models are in ../matlab/geometry
 └── README.md
 ```
 
