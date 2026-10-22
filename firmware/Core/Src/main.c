@@ -464,10 +464,10 @@ static float cil_abd_pulgar = 80.0f;   // ABD pulgar [deg]
 // ===== Trayectoria (perfil trapezoidal) =====
 static const float TRAJ_VMAX = 40.0f;    // deg/s   velocidad de crucero
 static const float TRAJ_AMAX = 200.0f;   // deg/s^2 aceleracion
-static const float deadzone_pwm_i = 1200.0f;  // friccion+gravedad i_mcp
-static const float deadzone_pwm_i_pip = 1200.0f;  // ajusta por experimento
-static const float deadzone_pwm_p_abd = 1200.0f;  // ajusta por experimento
-static const float deadzone_pwm_p_mcp = 1200.0f;  // ajusta por experimento
+static const float deadzone_pwm_i = 1400.0f;  // friccion+gravedad i_mcp
+static const float deadzone_pwm_i_pip = 1400.0f;  // ajusta por experimento
+static const float deadzone_pwm_p_abd = 1400.0f;  // ajusta por experimento
+static const float deadzone_pwm_p_mcp = 1400.0f;  // ajusta por experimento
 
 // ===== Agarre CILINDRICO 2 (inclinado) =====
 // MCP calculados por dedo (R=36 y posicion fijos) -> NO tunear
