@@ -7,8 +7,8 @@ Original datasets behind the experimental characterization reported in the paper
 | File | Content | Used for |
 |---|---|---|
 | `escalon_motor2.csv` | Step-response test of an isolated N20 gearmotor: time, PWM input and encoder-derived angular velocity | Motor model identification and LQR design (paper Eqs. 4, 5, 7, 8) |
-| `FSR.xlsx` | Force-sensitive resistor calibration with known loads | FSR calibration fit (paper Eq. 3) |
-| `Test_Hand.xlsx` | Physical bench grasp trials: test objects, outcomes, peak raw FSR readings and final encoder-derived joint angles | Paper Tables II, IV and V |
+| `FSR.xlsx` | Force-sensitive resistor calibration with known loads, and the linear fit | FSR calibration fit (paper Eq. 3) |
+| `Test_Hand.xlsx` | Physical bench grasp trials: test objects, outcomes, peak raw FSR readings, final encoder-derived joint angles and per-object statistics | Paper Tables II, IV and V |
 
 Related data stored in [`../matlab/script`](../matlab/script):
 
@@ -19,7 +19,7 @@ Related data stored in [`../matlab/script`](../matlab/script):
 
 **`escalon_motor2.csv`.** Semicolon-separated, with a comma as decimal separator. Columns: `time (s)`, `pwm` (counts) and `w (rad/s)`.
 
-**`FSR.xlsx`.** Applied mass (g), equivalent force (N) and ADC reading for two voltage-divider resistors (10 kΩ and 1 kΩ). The reported fit uses the 1 kΩ column.
+**`FSR.xlsx`.** Applied mass (g), equivalent force (N) and ADC reading for two voltage-divider resistors (10 kΩ and 1 kΩ), in sheet `Data`. Sheet `Fit` computes the slope, intercept and R² of the reported fit from the 1 kΩ column.
 
 **`Test_Hand.xlsx`.** One sheet per item:
 
@@ -29,6 +29,7 @@ Related data stored in [`../matlab/script`](../matlab/script):
 | `Test_Pinch` | Pinch trials: attempt, object, success (1) or failure (0), peak FSR readings, final index MCP/PIP and thumb ABD/MCP angles, observations |
 | `Test_Lateral` | Lateral pinch trials, same columns as `Test_Pinch` (without observations) |
 | `Test_Cylindrical` | Cylindrical grasp trials, same columns plus the final MCP/PIP angles of the middle, ring and little fingers |
+| `Stats` | Per-object successes, and mean and sample standard deviation of the FSR readings and of the four final index/thumb angles, computed with formulas from the trial sheets (paper Tables IV and V) |
 
 Column headers are in Spanish (`Intento` = attempt, `Objeto` = object, `Éxito/Fracaso` = success/failure). The middle, ring and little finger angles in `Test_Cylindrical` are not reported in the paper.
 
