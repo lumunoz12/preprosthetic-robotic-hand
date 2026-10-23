@@ -24,19 +24,19 @@ firmware/
 ├── Drivers/
 │   ├── CMSIS/                       Arm CMSIS and ST device headers
 │   └── STM32F7xx_HAL_Driver/        ST HAL and LL drivers
+├── Debug/                           Build output of the Debug configuration (regenerated when building)
 ├── final.ioc                        STM32CubeMX configuration (pins, clocks, peripherals)
 ├── final Debug.launch               Debug launch configuration
 ├── STM32F767ZITX_FLASH.ld           Linker script (flash)
 ├── STM32F767ZITX_RAM.ld             Linker script (RAM)
 ├── .project, .cproject, .mxproject  STM32CubeIDE project files
+├── .settings/                       STM32CubeIDE project settings
 └── README.md
 ```
 
 The files in `Drivers/` are distributed by ST and Arm under their own licenses; see the `LICENSE.txt` files in `Drivers/CMSIS/`, `Drivers/CMSIS/Device/ST/STM32F7xx/` and `Drivers/STM32F7xx_HAL_Driver/`.
 
-`cyl_targets.c` and `cyl_targets.h` are also stored in `matlab/scripts/`. Keep both copies identical if either is modified.
-
-Build output (`Debug/`, `.elf`, `.map`, `.list`) is not included.
+`cyl_targets.c` and `cyl_targets.h` are also stored in `matlab/simulink/script/`. Keep both copies identical if either is modified.
 
 ## Requirements
 
@@ -101,7 +101,7 @@ Axis prefixes: `I` index, `P` thumb, `M` middle, `A` ring (*anular*), `Q` little
 | Reference trajectory | Trapezoidal profile per axis, maximum velocity 40°/s and acceleration 200°/s², generating position and velocity references |
 | Controller | Discrete LQR state feedback, K = [2192.4  757.4] (from Q = diag(5000, 50), R = 0.001), same gains for all ten axes; no state observer |
 | Control law | u* = 2192.4(θref − θ) + 757.4(ωref − ω̂), with angles in rad and velocities in rad/s |
-| Output | u* limited to ±4095 counts; a constant compensation is added in the direction of the trajectory, and the final signed PWM is saturated to ±4095 counts (12-bit PWM, timer period 4095). Compensation: 1200 counts for index MCP/PIP and thumb abduction/MCP, 1400 counts for middle, ring and little finger axes |
+| Output | u* limited to ±4095 counts; a constant compensation is added in the direction of the trajectory, and the final signed PWM is saturated to ±4095 counts (12-bit PWM, timer period 4095). Compensation: 1400 counts for all axes |
 | Position-based stop | When the trajectory has finished and the absolute error to the target is below 1.5° |
 
 ## FSR supervision

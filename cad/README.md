@@ -41,7 +41,7 @@ cad/
 
 The model was originally created in Inventor 2021 and is currently saved in Inventor 2026. Inventor files cannot be opened in a release older than the one that last saved them, so these files **cannot be opened in Inventor 2021**.
 
-Inventor 2021 was used to export the model to Simscape Multibody through the Simscape Multibody Link plug-in, which was only available up to that release. The geometry used by the simulations is stored in [`../matlab/geometry`](../matlab/geometry); see [`../matlab/README.md`](../matlab/README.md).
+Inventor 2021 was used to export the model to Simscape Multibody through the Simscape Multibody Link plug-in, which was only available up to that release. The geometry used by the simulations is stored in [`../matlab/simulink/cad`](../matlab/simulink/cad); see [`../matlab/README.md`](../matlab/README.md).
 
 ## Finger composition
 
@@ -94,11 +94,11 @@ Print orientation, material and slicer settings are not prescribed. The paper re
 ## Modeling notes
 
 - **Bevel gears.** The CAD model represents the bevel gears in a simplified form, as 12T/24T gears (`12T.ipt`, `24T.ipt`). The physical prototype uses M0.5 bevel gears with 13 and 25 teeth (paper, Table VI). The firmware uses a nominal motor-output-to-joint ratio of nb = 2 as an approximation of this transmission.
-- **N20 gearmotor model.** `N20 Mini Micro Metall Gear Motor DC 3-6-12V v1.ipt` was obtained from a third-party online source and is used for fit and assembly only. It is not part of the authors' original design, and its original terms of use apply.
+- **N20 gearmotor model.** `N20 Mini Micro Metall Gear Motor DC 3-6-12V v1.ipt` is the model [N20 Mini Micro Metal Gear Motor with Encoder](https://grabcad.com/library/n20-mini-micro-metal-gear-motor-with-encoder-1) by [Steve Hentschke](https://grabcad.com/steve.hentschke-1), published in the GrabCAD Library on October 7, 2023. It is used for fit and assembly only, is not part of the authors' original design, and remains subject to the GrabCAD terms of use.
 
 ## Bill of materials
 
-Materials and equipment are listed in Table VI of the paper (see [`../docs`](../docs)). The reported budget is approximately USD 450 (CLP 434,712 at CLP 965/USD), including purchased spares and laboratory power supplies. It excludes engineering development time and charges for the use of university manufacturing equipment, and is not an installed-parts-only replication cost.
+Materials and equipment are listed in Table VI of the paper. The reported budget is approximately USD 450 (CLP 434,712 at CLP 965/USD), including purchased spares and laboratory power supplies. It excludes engineering development time and charges for the use of university manufacturing equipment, and is not an installed-parts-only replication cost.
 
 ## Limitations
 
