@@ -63,7 +63,7 @@ Each folder has its own `README.md` with contents, usage notes and limitations.
 | Embedded control and grasp execution (Sec. III, Fig. 3, Eqs. 2, 6, 9) | `firmware/` |
 | Simscape Multibody simulations (Sec. IV, Table III) | `matlab/simulink/` |
 | Bench trials (Sec. IV–V, Tables II, IV, V) | `data/Test_Hand.xlsx` |
-| Budget (Table VI) | Paper |
+| Budget (Table VI) | `data/Budget.xlsx` |
 
 ## Experimental data summary
 
