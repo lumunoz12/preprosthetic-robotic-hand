@@ -98,7 +98,7 @@ Print orientation, material and slicer settings are not prescribed. The paper re
 
 ## Bill of materials
 
-Materials and equipment are listed in Table VI of the paper. The reported budget is approximately USD 450 (CLP 434,712 at CLP 965/USD), including purchased spares and laboratory power supplies. It excludes engineering development time and charges for the use of university manufacturing equipment, and is not an installed-parts-only replication cost.
+Materials and equipment are listed in Table VI of the paper and in [`../data/Budget.xlsx`](../data/Budget.xlsx), with the purchase link of each item. The reported budget is approximately USD 450 (CLP 434,712 at CLP 965/USD), including purchased spares and laboratory power supplies. It excludes engineering development time and charges for the use of university manufacturing equipment, and is not an installed-parts-only replication cost.
 
 ## Limitations
 
