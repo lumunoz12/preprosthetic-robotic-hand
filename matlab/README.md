@@ -56,9 +56,16 @@ The kinematics and grasp-setpoint scripts use only base MATLAB.
 
 ## Running the simulations
 
-Open `simulink/simulink.prj` in MATLAB and run the models in `simulink/modelos/`.
+1. Open `simulink/simulink.prj` in MATLAB.
+2. Define the contact-force threshold in the Command Window:
 
-The simulated grasp logic uses a contact-force threshold `F_threshold = 2` N. It is distinct from the firmware threshold of 1500 ADC counts, and equivalence between the two was not established.
+   ```matlab
+   F_threshold = 2;
+   ```
+
+3. Open and run the models in `simulink/modelos/`.
+
+`F_threshold` is the contact-force threshold (in newtons) of the simulated grasp logic and must be defined in every new MATLAB session. It is distinct from the firmware threshold of 1500 ADC counts, and equivalence between the two was not established.
 
 The three grasp models use Spatial Contact Force blocks and were run with a variable-step `ode23` solver, maximum step size 1e-3 s, relative tolerance 1e-2 and absolute tolerance 1e-4.
 
