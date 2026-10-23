@@ -1,0 +1,15 @@
+# MATLAB / Simulink
+slprj/
+*.asv
+*.autosave
+*.slx.r*
+
+# Inventor
+cad/native/OldVersions/*.bak.new
+
+# Office (archivos de bloqueo al tener un Excel abierto)
+~$*
+
+# Windows
+Thumbs.db
+desktop.ini
