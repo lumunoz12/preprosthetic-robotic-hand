@@ -1,0 +1,15 @@
+# MATLAB / Simulink
+slprj/
+*.asv
+*.autosave
+*.slx.r*
+
+# Inventor
+OldVersions/
+
+# Office (lock files created while an Excel file is open)
+~$*
+
+# Windows
+Thumbs.db
+desktop.ini
