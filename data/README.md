@@ -9,6 +9,7 @@ Original datasets behind the experimental characterization reported in the paper
 | `escalon_motor2.csv` | Step-response test of an isolated N20 gearmotor: time, PWM input and encoder-derived angular velocity | Motor model identification and LQR design (paper Eqs. 4, 5, 7, 8) |
 | `FSR.xlsx` | Force-sensitive resistor calibration with known loads, and the linear fit | FSR calibration fit (paper Eq. 3) |
 | `Test_Hand.xlsx` | Physical bench grasp trials: test objects, outcomes, peak raw FSR readings, final encoder-derived joint angles and per-object statistics | Paper Tables II, IV and V |
+| `Budget.xlsx` | Materials and equipment budget: quantity, cost, university-provided items and purchase link of each item, with totals computed by formula | Paper Table VI |
 
 Related data stored in [`../matlab/script`](../matlab/script):
 
