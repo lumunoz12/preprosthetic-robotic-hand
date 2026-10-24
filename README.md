@@ -1,5 +1,7 @@
 # Design and Bench Evaluation of a Low-Cost Robotic Hand with Mechanically Coupled Distal Joints
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23627235.svg)](https://doi.org/10.5281/zenodo.23627235)
+
 This repository accompanies the paper **"Design and Bench Evaluation of a Low-Cost Robotic Hand with Mechanically Coupled Distal Joints"** (L. Muñoz and M. Fernández-Fernández, Universidad de Talca), submitted to IEEE ICA-ACCA 2026. It contains the mechanical design files, embedded firmware, MATLAB/Simulink/Simscape Multibody models and scripts, and the experimental datasets associated with the paper.
 
 <p align="center">
@@ -105,7 +107,9 @@ Simulation and bench conditions were not fully matched: joint targets were adjus
 
 ## Citation
 
-Final bibliographic details (pages, DOI) will be added after publication.
+If you use this repository, please cite both the paper and the archived repository.
+
+**Paper.** Final bibliographic details (pages, DOI) will be added after publication.
 
 ```bibtex
 @inproceedings{munoz2026robotichand,
@@ -114,6 +118,20 @@ Final bibliographic details (pages, DOI) will be added after publication.
   booktitle = {IEEE International Conference on Automation / XXVII Congress of the Chilean Association of Automatic Control (ICA-ACCA)},
   address   = {Concepci{\'o}n, Chile},
   year      = {2026}
+}
+```
+
+**Repository.** Version 1.0.0 is archived in Zenodo: [10.5281/zenodo.23627235](https://doi.org/10.5281/zenodo.23627235).
+
+```bibtex
+@software{munoz2026robotichand_repo,
+  author    = {Mu{\~n}oz, Luis and Fern{\'a}ndez-Fern{\'a}ndez, Mario},
+  title     = {Low-cost robotic hand with mechanically coupled distal joints: CAD, firmware, MATLAB/Simulink models and bench-test data},
+  version   = {1.0.0},
+  publisher = {Zenodo},
+  year      = {2026},
+  doi       = {10.5281/zenodo.23627235},
+  url       = {https://doi.org/10.5281/zenodo.23627235}
 }
 ```
 
