@@ -4,6 +4,9 @@ slprj/
 *.autosave
 *.slx.r*
 
+# STM32CubeIDE build output
+firmware/Debug/
+
 # Inventor
 OldVersions/
 
