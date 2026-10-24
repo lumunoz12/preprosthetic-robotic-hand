@@ -1,6 +1,0 @@
-<Resources>
-  <string id="%1%" value="Modificador de proporción de piñón"/>
-  <string id="%2%" value="Piñones montados abiertos con una excentricidad relativa menor a 0,175"/>
-  <string id="%3%" value="Piñones montados abiertos con una excentricidad relativa mayor a 0,175"/>
-  <string id="%4%" value="La excentricidad relativa es la unidad de distancia de la cara media del piñón desde el eje del intervalo del rodamiento"/>
-</Resources>

@@ -1,5 +1,0 @@
-<Resources>
-  <string id="%1%" value="Factor de corrección de avance de la rosca"/>
-  <string id="%2%" value="Engranaje con avances de la rosca no modificados"/>
-  <string id="%3%" value="Engranaje con avances de la rosca modificados apropiadamente mediante corrección de coronas o de avances de rosca"/>
-</Resources>

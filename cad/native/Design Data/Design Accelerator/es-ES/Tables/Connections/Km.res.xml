@@ -1,9 +1,0 @@
-<Resources>
-  <string id="%1%" value="Factor de distribución de carga para error de alineación de ranuras flexibles"/>
-  <string id="%2%" value="Error de alineación, pulgadas por pulgada"/>
-  <string id="%3%" value="Factor de distribución de carga, Km"/>
-  <string id="%4%" value="Anchura de cara de 1/2 pulgada"/>
-  <string id="%5%" value="Anchura de cara de 1 pulgada"/>
-  <string id="%6%" value="Anchura de cara de 2 pulgadas"/>
-  <string id="%7%" value="Anchura de cara de 4 pulgadas"/>
-</Resources>

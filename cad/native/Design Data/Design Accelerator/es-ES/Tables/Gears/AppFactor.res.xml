@@ -1,9 +1,0 @@
-<Resources>
-  <string id="%1%" value="Factor de aplicación"/>
-  <string id="%2%" value="Impactos de máquina impulsora"/>
-  <string id="%3%" value="Impactos de máquina impulsada"/>
-  <string id="%4%" value="Con fluidez"/>
-  <string id="%5%" value="Impactos leves"/>
-  <string id="%6%" value="Impactos moderados"/>
-  <string id="%7%" value="Impactos fuertes"/>
-</Resources>
