@@ -24,7 +24,6 @@ firmware/
 ├── Drivers/
 │   ├── CMSIS/                       Arm CMSIS and ST device headers
 │   └── STM32F7xx_HAL_Driver/        ST HAL and LL drivers
-├── Debug/                           Build output of the Debug configuration (regenerated when building)
 ├── final.ioc                        STM32CubeMX configuration (pins, clocks, peripherals)
 ├── final Debug.launch               Debug launch configuration
 ├── STM32F767ZITX_FLASH.ld           Linker script (flash)
