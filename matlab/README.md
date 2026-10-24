@@ -27,7 +27,6 @@ matlab/
 │   │   ├── mano_buena_lateral_paper.slx          Lateral pinch
 │   │   ├── mano_buena_cilindrico_paper.slx       Cylindrical grasp
 │   │   ├── LQR_simu.slx                          LQR simulation of a single motor
-│   │   ├── mano_buena_pinza_paper.slx.original   Backup copy of the pinch model
 │   │   └── *.slxc                                Simulink cache files
 │   ├── datos/
 │   │   └── mano_vf_DataFile1.m                   Geometry and inertia data required by the models
