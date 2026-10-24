@@ -1,5 +1,6 @@
 # MATLAB / Simulink
 slprj/
+*.slxc
 *.asv
 *.autosave
 *.slx.r*
