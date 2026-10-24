@@ -26,8 +26,7 @@ matlab/
 │   │   ├── mano_buena_pinza_paper.slx            Pinch
 │   │   ├── mano_buena_lateral_paper.slx          Lateral pinch
 │   │   ├── mano_buena_cilindrico_paper.slx       Cylindrical grasp
-│   │   ├── LQR_simu.slx                          LQR simulation of a single motor
-│   │   └── *.slxc                                Simulink cache files
+│   │   └── LQR_simu.slx                          LQR simulation of a single motor
 │   ├── datos/
 │   │   └── mano_vf_DataFile1.m                   Geometry and inertia data required by the models
 │   ├── cad/                                      STEP geometry used by the models (33 files)
@@ -35,7 +34,6 @@ matlab/
 │   │   ├── CILINDRICO.m
 │   │   ├── cyl_targets.c
 │   │   └── cyl_targets.h
-│   └── *.slxc                                    Simulink cache files
 └── README.md
 ```
 
