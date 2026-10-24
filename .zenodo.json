@@ -1,0 +1,29 @@
+{
+  "title": "Low-cost robotic hand with mechanically coupled distal joints: CAD, firmware, MATLAB/Simulink models and bench-test data",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "description": "<p>Repository accompanying the paper \"Design and Bench Evaluation of a Low-Cost Robotic Hand with Mechanically Coupled Distal Joints\" (L. Muñoz and M. Fernández-Fernández, Universidad de Talca), submitted to IEEE ICA-ACCA 2026.</p><p>It contains the Autodesk Inventor project and STL files of a five-finger, 3D-printed robotic hand; the STM32F767ZI firmware with encoder-based discrete LQR position control and FSR supervision; the MATLAB scripts and Simscape Multibody models used for kinematics, grasp simulation, motor identification and LQR design; and the experimental datasets and spreadsheets used for the motor characterization, FSR calibration, encoder comparison, bench grasp trials and budget reported in the paper.</p><p>The hand is a laboratory research prototype, not a clinically validated prosthetic device.</p>",
+  "creators": [
+    {
+      "name": "Muñoz, Luis",
+      "affiliation": "Universidad de Talca"
+    },
+    {
+      "name": "Fernández-Fernández, Mario",
+      "affiliation": "Universidad de Talca"
+    }
+  ],
+  "license": "cc-by-nc-4.0",
+  "access_right": "open",
+  "language": "eng",
+  "keywords": [
+    "robotic hand",
+    "pre-prosthetic",
+    "four-bar linkage",
+    "LQR control",
+    "STM32",
+    "Simscape Multibody",
+    "3D printing",
+    "grasping"
+  ]
+}
