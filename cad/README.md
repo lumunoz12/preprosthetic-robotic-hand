@@ -4,7 +4,7 @@ Mechanical design files of the five-finger robotic hand: the native Autodesk Inv
 
 ## Folder contents
 
-The `native/` folder is an Autodesk Inventor **Pack and Go** package of the complete hand, so it can be opened on another computer with all references resolved.
+The `native/` folder contains the Autodesk Inventor project of the complete hand. The project uses the default Design Data and templates of the local Inventor installation.
 
 ```text
 cad/
@@ -21,16 +21,9 @@ cad/
 │   │       ├── menique_VF/
 │   │       ├── pulgar_VF/
 │   │       └── sabado/
-│   ├── Design Data/                  Inventor support data (materials, styles, libraries)
-│   ├── Templates/                    Inventor templates
-│   ├── OldVersions/                  Backup copies created by Inventor
-│   ├── mano_VF.ipj.old
-│   └── packngo.log                   Pack and Go log
 ├── stl/                              STL files for 3D printing (50 files)
 └── README.md
 ```
-
-`Design Data/` and `Templates/` are standard Autodesk Inventor content added by Pack and Go so that the project is self-contained. They are not part of the authors' design and remain subject to Autodesk's terms.
 
 ## Opening the native files
 
